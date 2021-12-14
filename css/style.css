@@ -2493,16 +2493,16 @@ iframe {
   }
 }
 
-#accordeon, #equipment {
+#accordeon, #accordeon2, #equipment {
   margin: -10px;
 }
 
-.acc-head, .equipment__btn {
+.acc-head, .acc-head2, .equipment__btn {
   padding: 5px 10px;
   cursor: pointer;
 }
 
-.acc-body, .equipment-body {
+.acc-body, .acc-body2, .equipment-body {
   padding: 10px;
   margin-bottom: 5px;
   display: none;
