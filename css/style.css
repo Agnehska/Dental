@@ -1454,10 +1454,22 @@ ol.counter li:before {
 .breadcombs {
   color: #FFFFFF;
   margin: 0 0 55px 0;
+  font-family: Avenir Next Cyr;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.84;
 }
 @media (max-width: 992.5px) {
   .breadcombs {
     margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 2.87;
+  }
+}
+@media (max-width: 488.5px) {
+  .breadcombs {
+    line-height: 1.625;
   }
 }
 .breadcombs span {
@@ -2043,7 +2055,6 @@ ol.counter li:before {
           align-items: center;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #E9B8B8;
   font-family: Avenir Next Cyr;
   font-style: normal;
   font-weight: 800;
@@ -2051,6 +2062,9 @@ ol.counter li:before {
   line-height: 2;
   margin: 0 0 0 5px;
   white-space: nowrap;
+}
+.name__text span a {
+  color: #E9B8B8;
 }
 @media (max-width: 1000px) {
   .name__text span {
@@ -2178,6 +2192,28 @@ iframe {
     margin: 0 0 20px 0;
   }
 }
+.gallery__images .slick-prev {
+  left: 10px !important;
+  z-index: 5;
+  top: 50% !important;
+  bottom: unset !important;
+}
+@media (max-width: 550.5px) {
+  .gallery__images .slick-prev {
+    display: none;
+  }
+}
+.gallery__images .slick-next {
+  right: 215px !important;
+  z-index: 5;
+  top: 50% !important;
+  bottom: unset !important;
+}
+@media (max-width: 550.5px) {
+  .gallery__images .slick-next {
+    display: none;
+  }
+}
 .gallery__img {
   margin: 0 30px 0 0;
   width: 369px;
@@ -2207,6 +2243,28 @@ iframe {
   .gallery__img:nth-child(3), .gallery__img:nth-child(4) {
     display: none;
   }
+}
+.gallery__img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.35s ease;
+  transition: -webkit-transform 0.35s ease;
+  -o-transition: transform 0.35s ease;
+  transition: transform 0.35s ease;
+  transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
+.gallery__img:hover .gallery__img {
+  height: 400px;
+}
+
+[dir=rtl] .slick-next {
+  right: 12px !important;
+}
+
+[dir=rtl] .slick-prev {
+  right: unset !important;
+  left: 215px !important;
 }
 
 .team {
@@ -2718,6 +2776,7 @@ iframe {
 }
 .service__icon {
   position: relative;
+  display: block;
   margin: 0 0 50px 0;
 }
 @media (max-width: 616.5px) {
